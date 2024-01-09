@@ -1,0 +1,19 @@
+{
+  "name": "@visitsapp/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/node": "^20.10.4",
+    "sst": "^2.38.7",
+    "vitest": "^1.0.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.478.0",
+    "aws-sdk": "^2.1523.0"
+  }
+}

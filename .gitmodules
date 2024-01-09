@@ -1,0 +1,3 @@
+[submodule "packages/website"]
+	path = packages/website
+	url = git@github.com:noctisdark/mazenrecords-front.git
