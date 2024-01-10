@@ -27,7 +27,7 @@ export const mapVisitToDynamoDB = ({
     brand: { S: visit.brand },
     model: { S: visit.model },
     client: { S: visit.client },
-    contact: { S: visit.client },
+    contact: { S: visit.contact },
     fix: { S: visit.fix },
     problem: { S: visit.problem },
   };
