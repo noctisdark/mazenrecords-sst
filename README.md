@@ -32,7 +32,7 @@ Serverless Stack (SST) is an open-source framework for building serverless appli
   cd mazenrecords-sst
   ```
 
-3. Initialize and update submodules
+3. Initialize and update the frontend submodule
   ```bash
   git submodule init && git submodule update
   ```
@@ -86,10 +86,7 @@ export type Deletable<T extends { id: string }> =
   | T
   | { id: string; deleted: true; updatedAt: number };
 ```
-If a record is marked as deleted `{ deleted: true }`, the frontend deletes it from its own indexedDB.
-Otherwise, the record is inserted or updated based on the `updatedAt` timestamp.
-This allows a simple synchronization algorithm between the client (potentially offline) and the server.
-
+If a record is marked as deleted ({ deleted: true }), the frontend removes it from its IndexedDB. Otherwise, the record is inserted or updated based on the updatedAt timestamp, facilitating synchronization between the client (potentially offline) and the server.
 
 ## License
 This project is licensed under the MIT License.
